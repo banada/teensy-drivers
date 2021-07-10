@@ -1,0 +1,23 @@
+
+Build against the kernel - 
+    Do we have the USB headers? - libusb
+
+Load a module into the kernel
+    Auto-detected by USB subsystem on hotplug
+    Compatability? (Recognized by kernel)
+
+    register with usb_register()
+
+0. build & load module, print to kernel log
+1. w/o LED - print to log when device is recognized
+    kernel log location?
+2. automatically trigger LED to blink
+    send USB commands
+    receive USB commands
+    Run an Arduino sketch listening for USB?
+        receive command > trigger blink directly
+        build rawhid example along with sketch
+        sketch controls the LED
+3. Manually trigger LED to blink
+    kernel on the host controls the LED
+

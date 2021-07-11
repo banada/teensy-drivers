@@ -12,6 +12,11 @@ cd teensy-drivers/recognize_teensy
 make
 ```
 
+Load the module:
+```
+insmod ./module_boilerplate.ko
+```
+
 The `usbhid` module will always recognize the device first, so we need to override it. Add a udev rule:
 
 ```
@@ -23,5 +28,5 @@ Run `dmesg -w` to watch the kernel logs, and plug in your device. You should see
 
 <pre><font color="#859900">[ 3417.961202] </font><b>You plugged in a Teensy with serial number XXXXXXX</b></pre>
 
-Manually load the module with `insmod ./module_boilerplate.ko`. Manually remove the module with `rmmod module_boilerplate.ko`.
+You can manually remove the module with `rmmod module_boilerplate.ko`.
 

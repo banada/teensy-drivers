@@ -97,6 +97,6 @@ module_init(init_my_module);
 module_exit(exit_my_module);
 
 MODULE_VERSION("0.1.0");
-MODULE_LICENSE("GPL");
+MODULE_LICENSE("GPL v2");
 
 

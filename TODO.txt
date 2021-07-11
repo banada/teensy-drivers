@@ -8,9 +8,9 @@ Load a module into the kernel
 
     register with usb_register()
 
-0. build & load module, print to kernel log
+* 0. build & load module, print to kernel log
 1. w/o LED - print to log when device is recognized
-    kernel log location?
+    print device ID
 2. automatically trigger LED to blink
     send USB commands
     receive USB commands

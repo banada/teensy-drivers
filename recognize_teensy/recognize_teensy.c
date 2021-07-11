@@ -68,6 +68,7 @@ static void teensy_disconnect(struct usb_interface *intf) {
     usb_set_intfdata(intf, NULL);
     /* Clean up device */
     usb_put_dev(dev->udev);
+    kfree(dev);
 
     printk("%s\n", "Teensy USB device disconnected.");
 }
